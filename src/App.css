@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7d117;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 120px auto 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-screen,
+.listagem-container,
+.header-listagem {
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-home,
+.titulo-secao {
+  color: #111;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+.titulo-home {
+  margin-top: 20px;
+  font-size: 34px;
+  text-shadow: 3px 3px 0 #ff3b3b, 6px 6px 0 #000;
+  letter-spacing: 1px;
+}
+
+.destaque-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 16px auto 0;
+  padding: 18px 22px;
+  background: #fff;
+  color: #111;
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0 #000;
+  max-width: 700px;
+  text-align: left;
+}
+
+.destaque-imagem {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  flex-shrink: 0;
+}
+
+.destaque-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.destaque-revista {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.destaque-revista span {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #e10600;
+  text-transform: none;
+}
+
+.promocao-home {
+  margin: 0;
+  padding: 10px 14px;
+  background: linear-gradient(90deg, #ffcc00, #ff3b3b);
+  color: #000;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  display: inline-block;
+}
+
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, #e10600, #ffcc00);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #000;
+  box-shadow: 0 6px 0 #000;
+  z-index: 1000;
+}
+
+.topo h1 {
+  color: #000;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+.topo img {
+  position: absolute;
+  left: 20px;
+  width: 120px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.fim {
+  width: 100%;
+  height: 140px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-top: 5px solid #ffcc00;
+  margin-top: 40px;
+}
+
+.fim h4 {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fim img {
+  width: 80px;
+  height: auto;
+}
+
+.slideshow {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border: 5px solid #08122c;
+  box-shadow: 8px 8px 0 #000000;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.controles button,
+.btn-voltar,
+.card-menu,
+.btn-nav {
+  border: 3px solid #000;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 4px 4px 0 #000;
+}
+
+.controles button {
+  background: #ff3b3b;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 16px;
+}
+
+.controles button:hover,
+.btn-voltar:hover,
+.card-menu:hover,
+.btn-nav:hover,
+.cartao:hover {
+  transform: translate(-2px, -2px);
+}
+
+.controles button:hover {
+  background: #ffcc00;
+  color: #000;
+  box-shadow: 6px 6px 0 #000;
+}
+
+.grid-menu,
+.grid-cards {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+.grid-menu {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+.grid-cards {
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.card-menu,
+.cartao {
+  background: #fff;
+  color: #000;
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.card-menu {
+  padding: 30px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-menu h3 {
+  margin: 10px 0 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.icon {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.card-menu:hover {
+  background: #ffcc00;
+  box-shadow: 12px 12px 0 #000;
+}
+
+.titulo-secao {
+  font-size: 30px;
+  margin: 0;
+}
+
+.btn-voltar {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 0 #fff;
+}
+
+.btn-voltar:hover {
+  background: #ff3b3b;
+  box-shadow: 6px 6px 0 #fff;
+}
+
+.cartao {
+  margin: 10px;
+  padding: 16px;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cartao:hover {
+  background: #ffeb3b;
+  box-shadow: 10px 10px 0 #000;
+}
+
+.foto {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+}
+
+@media (max-width: 900px) {
+  .grid-menu,
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-menu,
+  .grid-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin: 110px auto 0;
+    padding: 15px;
+  }
+
+  .banner {
+    height: 220px;
+  }
+
+  .titulo-home {
+    font-size: 24px;
+  }
+
+  .subtitulo-home {
+    font-size: 15px;
+  }
+
+  .card-menu h3 {
+    font-size: 20px;
+  }
+
+  .topo h1 {
+    font-size: 20px;
+  }
+
+  .destaque-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .destaque-revista {
+    font-size: 18px;
+  }
+
+  .promocao-home {
+    font-size: 16px;
+  }
+}
